@@ -416,6 +416,121 @@
     }
 }
 
+
+
+.progress__section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
+    
+    
+    .my__progress {
+        padding-top: 150px;
+        padding-bottom: 80px;
+        background-image: url('../image/jpg/progress-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        
+        
+        .my__progress__title {
+            font-size: 36px;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: $ibarra-real-nova;
+            background-color: rgba(240, 240, 240, 0.6);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .progress__wrapper {
+            @include flex(space-between);
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgba(230, 230, 230, 0.9);
+            padding-right: 8px;
+            padding-left: 5px;
+            border-radius: 10px;
+            
+            .progress {
+                width: 80%;
+                height: 20px;
+                background-color: $light-color;
+
+                .progress__bar {
+                    padding: 10px;
+                }
+            }
+            
+            .progress__html {
+                background-color: #e34c26;
+            }
+            
+            .progress__js {
+                background-color: #e6b329;
+            }
+            
+            .progress__name {
+                @include flex(center);
+                position: relative;
+                margin: 0;
+                font-weight: bold;
+                border-radius: 4px;
+                padding: 7px 5px;
+                width: 135px;
+                padding-left: 35px;
+                overflow: hidden;
+            }
+            
+            .html::before {
+                background-image: url('../image/svg/html.svg');
+            }
+            
+            .css::before {
+                background-image: url('../image/svg/css.svg');
+            }
+            
+            .javascript::before {
+                background-image: url('../image/svg/js.svg');
+            }        
+            
+            .progress__name::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 35px;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: 24px;
+                background-position: center;
+                content: "";
+            }
+        }
+        
+        .progress__wrapper:not(:first-child) {
+            margin-top: 30px;
+        }
+        @include breakpoint-down(550px) {
+            .progress__wrapper {
+                width: 100%;
+            }
+        }
+    }
+
+    @include breakpoint-down(700px) {
+        .my__progress {
+            padding-top: 0;
+        }
+    }
+}
+
+
+
 .footer {
     background: $grayish-dark-blue-color;
     
@@ -426,11 +541,11 @@
         
         .footer__list {
             @include flex(center);
-
+            
             .footer__item:not(:first-child) {
                 margin-left: 48px;
             }
-
+            
             .site__logo, .footer__link {
                 color: $light-color;
                 text-decoration: none;
@@ -438,41 +553,41 @@
                 font-size: 14px;
             }
         }
-
+        
         .media__list {
             @include flex(center);
-
-
+            
+            
             .media__item:not(:last-child) {
                 margin-right: 15px;
             }
-
+            
             .media__link {
                 color: $light-color;
             }
         }
-
+        
         .footer__link:hover, .media__link:hover {
             color: $esaturated-cyan-color;
         }
     }
-
+    
     @include breakpoint-down(550px) {
         .footerbar {
             @include flexDirection(column, center, center);
             height: auto;
             padding-top: 56px;
             padding-bottom: 56px;
-
+            
             .footer__list {
                 @include flexDirection(column, center, center);
-
+                
                 .footer__item:not(:first-child) {
                     margin-left: 0;
                     margin-top: 40px;
                 }
             }
-
+            
             .media__list {
                 margin-top: 40px;
             }

@@ -435,6 +435,119 @@
   }
 }
 
+.progress__section {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.progress__section .my__progress {
+  padding-top: 150px;
+  padding-bottom: 80px;
+  background-image: url("../image/jpg/progress-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.progress__section .my__progress .my__progress__title {
+  font-size: 36px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "IbarraRealNovaRegular";
+  background-color: rgba(240, 240, 240, 0.6);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.progress__section .my__progress .progress__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(230, 230, 230, 0.9);
+  padding-right: 8px;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+
+.progress__section .my__progress .progress__wrapper .progress {
+  width: 80%;
+  height: 20px;
+  background-color: #fff;
+}
+
+.progress__section .my__progress .progress__wrapper .progress .progress__bar {
+  padding: 10px;
+}
+
+.progress__section .my__progress .progress__wrapper .progress__html {
+  background-color: #e34c26;
+}
+
+.progress__section .my__progress .progress__wrapper .progress__js {
+  background-color: #e6b329;
+}
+
+.progress__section .my__progress .progress__wrapper .progress__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 7px 5px;
+  width: 135px;
+  padding-left: 35px;
+  overflow: hidden;
+}
+
+.progress__section .my__progress .progress__wrapper .html::before {
+  background-image: url("../image/svg/html.svg");
+}
+
+.progress__section .my__progress .progress__wrapper .css::before {
+  background-image: url("../image/svg/css.svg");
+}
+
+.progress__section .my__progress .progress__wrapper .javascript::before {
+  background-image: url("../image/svg/js.svg");
+}
+
+.progress__section .my__progress .progress__wrapper .progress__name::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  content: "";
+}
+
+.progress__section .my__progress .progress__wrapper:not(:first-child) {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 550px) {
+  .progress__section .my__progress .progress__wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .progress__section .my__progress {
+    padding-top: 0;
+  }
+}
+
 .footer {
   background: #33323d;
 }

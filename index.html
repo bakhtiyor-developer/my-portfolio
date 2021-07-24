@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./sass/main.scss">
 </head>
 <body>
+    
+    
+    <div id="Progress_Status">
+        <div id="myprogressBar"></div>
+    </div>
     
     <!-- navbar -->
     <nav class="navbar">
@@ -50,9 +57,9 @@
             <div class="hero__box">
                 <div class="hero__content__wrapper">
                     <h2 class="hero__content__title">
-                        Hey, I’m Mr Bakhtiyor and I love building beautiful websites
+                        Hey, I’m Bakhtiyor and I love building beautiful websites
                     </h2>
-                    <a href="https://instagram.com/jr_developer7" class="hero__content__link">
+                    <a href="#about-me" class="hero__content__link">
                         about me
                     </a>
                 </div>
@@ -67,42 +74,69 @@
             <div class="main__box">
                 <div class="main__image__wrapper">
                     <picture>
-                        <!-- JPG 700 -->
-                        <source media="(max-width: 700px)" srcset="./image/jpg/portrate-3.webp 1x, ./image/jpg/portrate-3@2x.jpg 2x" type="image/jpg">
-                        
-                        <!-- JPG 770 -->
-                        <source media="(max-width: 770px)" srcset="./image/jpg/portrate-2.webp 1x, ./image/jpg/portrate-2@2x.jpg 2x" type="image/jpg">
-                        
-                        <img class="main__portrate__image" src="./image/jpg/portrate.jpg" alt="portrate of human" srcset="./image/jpg/portrate.jpg 1x, ./image/jpg/portrate@2x.jpg 2x">
+                        <img class="main__portrate__image" src="./image/jpg/my-image.jpg" alt="portrate of human">
                     </picture>
                 </div>
                 
-                <div class="main__content__wrapper">
+                <div id="about-me" class="main__content__wrapper">
                     <h1 class="main__content__title">
                         About Me
                     </h1>
                     <p class="main__content__desc">
-                        I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+                        I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in Tashkent, UZB, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
                     </p>
-                    <a href="#" class="main__content__link">
+                    <a href="https://nifty-mayer-f25f3b.netlify.app" class="main__content__link">
                         go to portfolio
                     </a>
                 </div>
             </div>
-            <div class="main__footer">
+            
+            
+            <footer class="main__footer">
                 <h1 class="main__footer__title">
                     Interested in doing a project together?
                 </h1>
                 
                 <hr class="main__footer__line">
                 
-                <a href="#" class="main__footer__link">
+                <a href="tel:+99899-606-01-64" class="main__footer__link">
                     contact me
                 </a>
-            </div>
+            </footer>
         </div>
     </main>
     <!-- end of main -->
+    
+    <section class="progress__section">
+        <div class="container">
+            <div class="my__progress">
+                <h2 class="my__progress__title">
+                    The approximate progress of my knowledge
+                </h2>
+                
+                <div class="progress__wrapper">
+                    <h6 class="progress__name html">HTML</h6>
+                    <div class="progress">
+                        <div class="progress-bar progress__html" role="progressbar" style="width: 61%;" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100">61%</div>
+                    </div>
+                </div>
+                
+                <div class="progress__wrapper">
+                    <h6 class="progress__name css">CSS</h6>
+                    <div class="progress">
+                        <div class="progress-bar progress__css" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                    </div>
+                </div>
+                
+                <div class="progress__wrapper">
+                    <h6 class="progress__name javascript">JS</h6>
+                    <div class="progress">
+                        <div class="progress-bar progress__js" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- footer -->
     <footer class="footer">
@@ -138,13 +172,15 @@
                         </a>
                     </div>
                     <div class="media__item">
-                        <a href="#" class="media__link">
-                            <svg width="24" height="20" fill="none"><path d="M24 2.557a9.83 9.83 0 0 1-2.828.775c1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195C19.313.846 18.032.248 16.616.248a4.93 4.93 0 0 0-4.797 6.045C7.728 6.088 4.1 4.128 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574c-.806-.026-1.566-.247-2.229-.616a4.93 4.93 0 0 0 3.949 4.89c-.693.188-1.452.232-2.224.084a4.93 4.93 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" fill="currentColor"/></svg>
+                        <a href="https://instagram.com/jr_developer7" class="media__link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM5.838 12C5.838 8.597 8.597 5.838 12 5.838C15.403 5.838 18.162 8.597 18.162 12C18.162 15.404 15.403 18.163 12 18.163C8.597 18.163 5.838 15.403 5.838 12ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM16.965 5.595C16.965 4.8 17.61 4.155 18.406 4.155C19.201 4.155 19.845 4.8 19.845 5.595C19.845 6.39 19.201 7.035 18.406 7.035C17.61 7.035 16.965 6.39 16.965 5.595Z" fill="currentColor"/>
+                            </svg>
                         </a>
                     </div>
                     <div class="media__item">
-                        <a href="#" class="media__link">
-                            <svg width="24" height="24" fill="none"><path fill-rule="evenodd" d="M2.4 0h19.2A2.41 2.41 0 0 1 24 2.4v19.2a2.41 2.41 0 0 1-2.4 2.4H2.4A2.41 2.41 0 0 1 0 21.6V2.4A2.41 2.41 0 0 1 2.4 0zm1.2 20.4h3.6V9.6H3.6v10.8zM5.4 7.56A2.15 2.15 0 0 1 3.24 5.4 2.15 2.15 0 0 1 5.4 3.24 2.15 2.15 0 0 1 7.56 5.4 2.15 2.15 0 0 1 5.4 7.56zM16.8 20.4h3.6v-6.84c0-2.28-1.92-4.2-4.2-4.2-1.08 0-2.4.72-3 1.68V9.6H9.6v10.8h3.6v-6.36a1.85 1.85 0 0 1 1.8-1.8 1.85 1.85 0 0 1 1.8 1.8v6.36z" fill="currentColor"/></svg>
+                        <a href="https://www.facebook.com/bahtiyor.mirzaaxmedov.92" class="media__link">
+                            <svg width="24" height="24" fill="none"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" fill="currentColor"/></svg>
                         </a>
                     </div>
                 </div>
@@ -153,6 +189,10 @@
     </footer>
     <!-- end of footer -->
     
+    
+    <!-- Bootstrap js -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- App js -->
     <script src="./js/app.js"></script>
 </body>
 </html>
