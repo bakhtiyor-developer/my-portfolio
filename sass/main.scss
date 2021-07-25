@@ -467,14 +467,6 @@
                 }
             }
             
-            .progress__html {
-                background-color: #e34c26;
-            }
-            
-            .progress__js {
-                background-color: #e6b329;
-            }
-            
             .progress__name {
                 @include flex(center);
                 position: relative;
