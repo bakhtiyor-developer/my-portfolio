@@ -115,6 +115,7 @@
     height: 0px;
     background: #33323d;
     transition: height 0.3s linear;
+    padding-left: 0;
     visibility: hidden;
   }
   .navbar .nav__box .navbar__list .navbar__item:not(:last-child) {

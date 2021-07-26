@@ -99,6 +99,7 @@
                 height: 0px;
                 background: $grayish-dark-blue-color;
                 transition: height 0.3s linear;
+                padding-left: 0;
                 visibility: hidden;
                 
                 .navbar__item:not(:last-child) {
